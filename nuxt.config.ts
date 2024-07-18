@@ -16,6 +16,6 @@ export default defineNuxtConfig({
   ],
   buildModules: [
     '@nuxt/typescript-build',
-  ],
+  ]
 })
 

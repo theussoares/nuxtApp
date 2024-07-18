@@ -113,14 +113,16 @@ const login = (email, password) => {
         password: password
     }
     
-    if(!errorEmail && !errorPassword){
+    if(!errorEmail.value && !errorPassword.value){
         console.log('works')
         uuid.isLogged = true
-        user.userInfo = result.data
+        user.userInfo = userLogin
         localStorage.setItem("uuid", uuid.userUuid)
         navigateTo("/")
+    }else{
+        alert('Fill in the right informations!')
     }
-    alert('Fill in the right informations!')
+    
 }
 
 </script>
